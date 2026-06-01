@@ -1,0 +1,184 @@
+/* General Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; /* Odin Project suggests Roboto */
+}
+
+/* Header & Hero */
+.header-container {
+  background-color: #3A5333;
+  padding: 20px 15%;
+  color: #f9faf8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* Changed 'size' to 'width' or 'max-width' */
+  max-width: 150px; 
+}
+
+/* Also ensure your navigation logo doesn't blow up the navbar height */
+.logo img {
+  height: 70px; 
+  width: auto;
+  display: block; /* Removes any default inline whitespace under the image */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.main-container {
+  background-color: #8BA280;
+  padding: 20px 15%;
+  color: #f9faf8;
+}
+
+.hero {
+  display: flex;
+  gap: 40px;
+  align-items:flex-end;
+  padding-bottom: 0px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 15px;
+}
+
+.hero-btn, .cta-btn {
+  background-color: #C2AE7D;
+  color: white;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 500px; /* Prevents the image from getting abnormally wide on massive screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Target the actual image inside the hero block so it doesn't warp */
+.hero-image img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain; /* Keeps its aspect ratio safe */
+}
+
+/* Info Section */
+.info-section {
+  background-color: #F6F4EB; /* Define o seu novo fundo claro */
+  padding: 80px 15%;
+  text-align: center;
+  color: #2a3029;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  width: 300px; /* Keeps your text and image alignment uniform */
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.info-item p {
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+.info-item img {
+  width: 100%;
+  height: auto;
+  border: 4px solid #8BA280;
+  border-radius: 12px; /* Optional: adds a soft corner to match your aesthetic */
+  object-fit: cover;   /* Crops elegantly if your image ratios differ slightly */
+  padding: 0 30px;
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: #C2AE7D;
+  padding: 100px 20%;
+  color: #2a3029;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.quote-author {
+  text-align: right;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 15%;
+}
+
+.cta-banner {
+  background-color: #8BA280;
+  color: white;
+  padding: 40px 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-btn {
+  border: 2px solid white;
+}
+
+/* Footer */
+footer {
+  background-color: #3A5333;
+  color: #2a3029;
+  font-weight: bold;
+  padding: 30px;
+  text-align: center;
+}
